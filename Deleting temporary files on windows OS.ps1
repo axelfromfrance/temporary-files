@@ -7,7 +7,7 @@ function Clear-TemporaryFiles {
     param (
         [string]$Path
     )
-    Write-Host "Nettoyage du dossier : $Path" -ForegroundColor Yellow
+    Write-Host "Cleaning the folder : $Path" -ForegroundColor Yellow
 
     # Check if the path exists
     if (Test-Path $Path) {
@@ -35,4 +35,4 @@ function Clear-TemporaryFiles {
 Clear-TemporaryFiles -Path $TempUser
 Clear-TemporaryFiles -Path $TempSystem
 
-Write-Host "Nettoyage terminé pour tous les répertoires temporaires." -ForegroundColor Cyan
+Write-Host "Cleaning completed for all temporary directories" -ForegroundColor Cyan
